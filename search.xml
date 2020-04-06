@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>test</title>
+      <link href="/2020/04/06/test/"/>
+      <url>/2020/04/06/test/</url>
+      
+        <content type="html"><![CDATA[<p>live2d  moc3 test<br><Html></p><body><!-- 用于存放Live2d的元素，可自定义 --><div class="Canvas"  style="position: fixed; right: 10px; bottom: 10px; background-color:transparent; z-index: 999999" id="L2dCanvas"></div><!-- 低版本浏览器支持 --><script src="./live2d/polyfill.min.js"> </script><!-- 核心JS --><script src="https://cubism.live2d.com/sdk-web/cubismcore/live2dcubismcore.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pixi.js@4.6.1/dist/pixi.min.js"></script><!-- live2dv3.js --><script src="./live2d/live2dv3.min.js"></script><!-- 加载Live2d模型 --><script>window.onload = () => {    new l2dViewer({        el: document.getElementById('L2dCanvas'), // 要添加Live2d的元素        basePath: './live2d', // 模型根目录        modelName: 'shengluyisi_3', // 模型名称        width: 550,        height: 400    })}</script></body></html><p>END</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2020/04/05/hello-world/"/>
       <url>/2020/04/05/hello-world/</url>
