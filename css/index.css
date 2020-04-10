@@ -28,7 +28,7 @@ body {
   z-index: -999;
   width: 100%;
   height: 100%;
-  background: ;
+  background: url(https://konachan.com/image/0041c51378b3ec3b9883a2a8a7a93130/Konachan.com%20-%20304317%20animal%20animal_ears%20aqua_eyes%20black_hair%20breasts%20cat%20cleavage%20computer%20doll%20drink%20fang%20game_console%20microphone%20phone%20pokemon%20shorts%20yaemori_mini.png);
   background-attachment: local;
   background-position: center;
   -webkit-background-size: cover;
@@ -100,8 +100,8 @@ hr:before {
   transition: all 1s ease-in-out;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  font-weight: normal;
-  font-family: FontAwesome;
+  font-weight: 600;
+  font-family: 'Font Awesome 5 Free';
 }
 iframe {
   margin: 0 0 1rem;
@@ -1538,6 +1538,8 @@ canvas,
   background: #f6f8fa;
   color: #90a4ae;
   line-height: 20px;
+  counter-reset: line;
+  white-space: pre-wrap;
 }
 .code-area-wrap {
   position: relative;
@@ -1600,6 +1602,15 @@ blockquote footer cite:before {
 #article-container figure.highlight .line::selection {
   background: rgba(128,203,196,0.251);
   color: #90a4ae;
+}
+#article-container figure.highlight .line:before {
+  display: inline-block;
+  padding: 0 0.3rem 0 0;
+  min-width: 1.6rem;
+  color: #cfd8dc;
+  content: counter(line);
+  counter-increment: line;
+  text-align: left;
 }
 #article-container figure.highlight .line.marked {
   background-color: rgba(128,203,196,0.251);
@@ -2274,6 +2285,13 @@ blockquote footer cite:before {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+}
+#footer:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  content: '';
 }
 #footer-wrap {
   position: relative;
@@ -2995,7 +3013,8 @@ figure.gallery-group .gallery-group-name:after {
   top: 13px;
   left: 15px;
   font-size: larger;
-  font-family: 'FontAwesome';
+  font-weight: 600;
+  font-family: 'Font Awesome 5 Free';
 }
 .note.default {
   background-color: #f7f7f7;
@@ -3663,9 +3682,133 @@ figure.gallery-group .gallery-group-name:after {
     width: 100% !important;
   }
 }
+#article-container h1,
+#article-container h2,
+#article-container h3,
+#article-container h4,
+#article-container h5,
+#article-container h6 {
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+#article-container h1:before,
+#article-container h2:before,
+#article-container h3:before,
+#article-container h4:before,
+#article-container h5:before,
+#article-container h6:before {
+  position: absolute;
+  top: calc(50% - 0.35rem);
+  color: #f47466;
+  content: '\f0c1';
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  font-family: 'Font Awesome 5 Free';
+}
+#article-container h1:hover:before,
+#article-container h2:hover:before,
+#article-container h3:hover:before,
+#article-container h4:hover:before,
+#article-container h5:hover:before,
+#article-container h6:hover:before {
+  color: #49b1f5;
+}
+#article-container h1 {
+  padding-left: 1.4rem;
+}
+#article-container h1 code {
+  font-size: 1rem;
+}
+#article-container h1:before {
+  margin-left: -1.2rem;
+  font-size: 1rem;
+}
+#article-container h1:hover {
+  padding-left: 1.6rem;
+}
+#article-container h2 {
+  padding-left: 1.3rem;
+}
+#article-container h2 code {
+  font-size: 0.9rem;
+}
+#article-container h2:before {
+  margin-left: -1.1rem;
+  font-size: 0.9rem;
+}
+#article-container h2:hover {
+  padding-left: 1.5rem;
+}
+#article-container h3 {
+  padding-left: 1.2rem;
+}
+#article-container h3 code {
+  font-size: 0.8rem;
+}
+#article-container h3:before {
+  margin-left: -1rem;
+  font-size: 0.8rem;
+}
+#article-container h3:hover {
+  padding-left: 1.4rem;
+}
+#article-container h4 {
+  padding-left: 1.1rem;
+}
+#article-container h4 code {
+  font-size: 0.7rem;
+}
+#article-container h4:before {
+  margin-left: -0.9rem;
+  font-size: 0.7rem;
+}
+#article-container h4:hover {
+  padding-left: 1.3rem;
+}
+#article-container h5 {
+  padding-left: 1rem;
+}
+#article-container h5 code {
+  font-size: 0.6rem;
+}
+#article-container h5:before {
+  margin-left: -0.8rem;
+  font-size: 0.6rem;
+}
+#article-container h5:hover {
+  padding-left: 1.2rem;
+}
+#article-container h6 {
+  padding-left: 1rem;
+}
+#article-container h6 code {
+  font-size: 0.6rem;
+}
+#article-container h6:before {
+  margin-left: -0.8rem;
+  font-size: 0.6rem;
+}
+#article-container h6:hover {
+  padding-left: 1.2rem;
+}
 #article-container ol,
 #article-container ul {
   margin-top: 0.4rem;
+  padding: 0 0 0 0.8rem;
+  list-style: none;
   counter-reset: li;
 }
 #article-container ol p,
@@ -3681,8 +3824,55 @@ figure.gallery-group .gallery-group-name:after {
 #article-container ol li,
 #article-container ul li {
   position: relative;
-  margin: 0.3rem 0;
-  padding-left: 0.3rem;
+  margin: 0.2rem 0;
+  padding: 0.1rem 0.5rem 0.1rem 1.5rem;
+}
+#article-container ol li:hover:before,
+#article-container ul li:hover:before {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+#article-container ol li:before,
+#article-container ul li:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #49b1f5;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+#article-container ol > li:before {
+  margin-top: 0.2rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 0.6rem;
+  content: counter(li);
+  counter-increment: li;
+  text-align: center;
+  font-size: 0.6rem;
+  line-height: 1.2rem;
+}
+#article-container ul > li:hover:before {
+  border-color: #ff7242;
+}
+#article-container ul > li:before {
+  top: 10px;
+  margin-left: 0.45rem;
+  width: 0.3rem;
+  height: 0.3rem;
+  border: 0.15rem solid #49b1f5;
+  border-radius: 0.3rem;
+  background: transparent;
+  content: '';
+  line-height: 0.3rem;
 }
 a {
   color: #99a9bf;
@@ -4356,6 +4546,20 @@ img {
   #sidebar .toc-child {
     display: block !important;
   }
+}
+#article-container .aplayer ol,
+#article-container .aplayer ul {
+  margin: 0;
+  padding: 0;
+}
+#article-container .aplayer ol li,
+#article-container .aplayer ul li {
+  margin: 0;
+  padding: 0 15px;
+}
+#article-container .aplayer ol li:before,
+#article-container .aplayer ul li:before {
+  content: none;
 }
 .fireworks {
   position: fixed;
