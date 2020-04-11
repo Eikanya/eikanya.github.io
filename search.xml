@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>方舟指令live2d提取</title>
+      <link href="/post/%E6%96%B9%E8%88%9F%E6%8C%87%E4%BB%A4/"/>
+      <url>/post/%E6%96%B9%E8%88%9F%E6%8C%87%E4%BB%A4/</url>
+      
+        <content type="html"><![CDATA[<h1 id="方舟指令live2d提取"><a href="#方舟指令live2d提取" class="headerlink" title="方舟指令live2d提取"></a>方舟指令live2d提取</h1><p>方舟指令的live2d有moc和moc3格式。moc文件没有被加密。</p><h2 id="准备工具"><a href="#准备工具" class="headerlink" title="准备工具"></a>准备工具</h2><p><code>AssetStudio.v0.13.24</code><br><code>Advanced Renamer</code></p><h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><ol><li>提取live2d文件，国服位置<code>Android/data/com.mingchao.fzzl.bilibili/files/res/live2d/servant</code>。l_xxx的文件夹代表live2d文件夹。<br>还有部分在apk里面<code>/data/app/com.mingchao.fzzl.bilibili/assets/live2d/servant</code><br>音频位置<code>Android/data/com.mingchao.fzzl.bilibili/files/res/audio/servant</code>，后缀格式为.ab。 </li><li>打开<code>AssetStudio</code>,加载live2d文件夹，<code>AssetStudio</code>设置<code>Options - Export options - Group exported assets by contain path</code>。</li><li>设置<code>Filter Type</code>- 勾选<code>TextAsset</code>和<code>Texture2D</code>，然后选项过滤后的全部文件夹，<code>Export</code>-<code>Selected assets</code>。(导入音频也差不多)。</li><li>导出文件需要改后缀。<ul><li>将<code>*.moc.txt</code>文件改为<code>model.moc</code></li><li>将<code>*.model.txt</code>文件改为<code>model.json</code></li><li>将<code>*.2048</code>文件夹改为<code>textures</code> (可选)</li><li>将<code>L_*.png</code>文件改为<code>texture_0*.png</code> (可选)</li><li>将<code>motions</code>文件夹中<code>*.mtn.txt</code>文件改为<code>*.mtn</code>    </li></ul></li><li>使用<code>Advanced Renamer</code>批量修改文件名字。</li><li>配置model.json文件。修改后，注释为要修改的地方<pre><code>{ &quot;type&quot;: &quot;Live2D Model Setting&quot;, &quot;name&quot;: &quot;L_103300460&quot;, &quot;model&quot;: &quot;model.moc&quot;,   //moc文件相对位置 &quot;textures&quot;: [                       //png文件相对位置 &quot;textures/texture_00.png&quot;, &quot;textures/texture_01.png&quot;, &quot;textures/texture_02.png&quot;, &quot;textures/texture_03.png&quot;],&quot;trigger&quot;: [], &quot;motions&quot;: {     &quot;idle&quot;: [       { &quot;file&quot;: &quot;motions/idle.mtn&quot;,&quot;fade_in&quot;:7000, &quot;fade_out&quot;:7000 ,&quot;cv_id&quot;:1}     ],     &quot;idle_click&quot;: [       { &quot;file&quot;: &quot;motions/02.mtn&quot;,&quot;fade_in&quot;:0, &quot;fade_out&quot;:0,&quot;cv_id&quot;:2},       { &quot;file&quot;: &quot;motions/03.mtn&quot;,&quot;fade_in&quot;:0, &quot;fade_out&quot;:0 ,&quot;cv_id&quot;:3},       { &quot;file&quot;: &quot;motions/04.mtn&quot;,&quot;fade_in&quot;:0, &quot;fade_out&quot;:0 ,&quot;cv_id&quot;:4},       { &quot;file&quot;: &quot;motions/05.mtn&quot;,&quot;fade_in&quot;:0, &quot;fade_out&quot;:0,&quot;cv_id&quot;:5},       { &quot;file&quot;: &quot;motions/06.mtn&quot;,&quot;fade_in&quot;:0, &quot;fade_out&quot;:0 ,&quot;cv_id&quot;:6},       { &quot;file&quot;: &quot;motions/07.mtn&quot;,&quot;fade_in&quot;:0, &quot;fade_out&quot;:0 ,&quot;cv_id&quot;:7},       { &quot;file&quot;: &quot;motions/08.mtn&quot;,&quot;fade_in&quot;:0, &quot;fade_out&quot;:0,&quot;cv_id&quot;:8},       { &quot;file&quot;: &quot;motions/09.mtn&quot;,&quot;fade_in&quot;:0, &quot;fade_out&quot;:0 ,&quot;cv_id&quot;:9},       { &quot;file&quot;: &quot;motions/10.mtn&quot;,&quot;fade_in&quot;:0, &quot;fade_out&quot;:0 ,&quot;cv_id&quot;:10},       { &quot;file&quot;: &quot;motions/11.mtn&quot;,&quot;fade_in&quot;:0, &quot;fade_out&quot;:0 ,&quot;cv_id&quot;:11},       { &quot;file&quot;: &quot;motions/12.mtn&quot;,&quot;fade_in&quot;:0, &quot;fade_out&quot;:0 ,&quot;cv_id&quot;:12},     ] }}</code></pre>可以使用Live2dViewerEX修改，新建配置文件，然后复制相应配置代码。<hr>关于moc3格式，应该需要使用unity在文件夹打包成unity的assets格式或者ab格式，使用<code>UnityLive2DExtractor</code>提取。<br>我已经整理好了live2d文件，在github，我没有提取音频。</li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> live2d </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>少女前线live2d提取</title>
       <link href="/post/%E5%B0%91%E5%A5%B3%E5%89%8D%E7%BA%BF/"/>
       <url>/post/%E5%B0%91%E5%A5%B3%E5%89%8D%E7%BA%BF/</url>
