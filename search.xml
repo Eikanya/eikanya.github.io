@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>为美好的世界献上祝福live2d提取</title>
+      <link href="/post/%E4%B8%BA%E7%BE%8E%E5%A5%BD%E7%9A%84%E4%B8%96%E7%95%8C%E7%8C%AE%E4%B8%8A%E7%A5%9D%E7%A6%8F/"/>
+      <url>/post/%E4%B8%BA%E7%BE%8E%E5%A5%BD%E7%9A%84%E4%B8%96%E7%95%8C%E7%8C%AE%E4%B8%8A%E7%A5%9D%E7%A6%8F/</url>
+      
+        <content type="html"><![CDATA[<h1 id="为美好的世界献上祝福live2d提取"><a href="#为美好的世界献上祝福live2d提取" class="headerlink" title="为美好的世界献上祝福live2d提取"></a>为美好的世界献上祝福live2d提取</h1><p>この素晴らしい世界に祝福を！ファンタスティックデイズ.<br>为美好的世界献上祝福！Fantastic Days的live2d为moc3格式。moc3文件没有被加密。音频视频文件为Cri加密。</p><h2 id="准备工具"><a href="#准备工具" class="headerlink" title="准备工具"></a>准备工具</h2><p><code>AssetStudio.v0.13.24</code><br><code>Advanced Renamer</code><br><code>UnityLive2DExtractor</code><br><code>VGMToolbox</code><br><code>HCADecoder</code> </p><h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><ol><li>提取live2d文件，<code>/jp.co.sumzap.pj0007/files/UnityCache/Shared</code><br>里面的文件夹，需要分析那些文件夹有live2d。</li><li>打开<code>AssetStudio</code>,加载Shared文件夹，搜索<code>texture_00</code>，显示的都是有live2d的文件夹。<br>快速一点的用<code>Advanced Renamer</code>加载文件夹,显示<code>添加目录</code>,勾选包括子目录，文件名掩码<code>*data*</code>,批处理模型选择<code>移动</code>，输出新建一个文件夹。然后分开600KB也是的文件，再用<code>AssetStudio</code>筛选文件。</li><li>使用<code>UnityLive2DExtractor</code>提取live2d，移动文件到<code>UnityLive2DExtractor.exe</code>。</li><li>使用 <code>Advanced Renamer</code>重命名好文件名，配置model3.json文件。</li><li>使用<code>Advanced Renamer</code>批量修改文件名字。</li></ol><hr><h3 id="音频提取"><a href="#音频提取" class="headerlink" title="音频提取"></a>音频提取</h3><ol><li><p>音频文件在/bundes/Cri/Cpk文件夹，Usm是视频文件夹。</p></li><li><p>打开<code>VGMToolbox</code>，选择<code>Extraction Tools-Common Archives-CRI CPK/</code>，把<code>.CPK</code>文件全部拖进去解包。</p></li><li><p>用<code>Advanced Renamer</code>，把<code>.acb</code>文件全部移动出来。</p></li><li><p>选择<code>Extraction Tools-Common Archives-CRI AWB/</code>，把<code>awb</code>文件全部拖进去解包。</p></li><li><p>使用<code>HCADecoder</code> 转码<code>.hca</code>文件，批量处理。代码保存为.bat放在根目录上</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">for &#x2F;R %%f in (*.hca) do hca.exe %%f</span><br><span class="line">pause</span><br></pre></td></tr></table></figure></li><li><p>删除多余的<code>.hca</code>文件，把下面代码保存为.bat ，同样放在根目录上。 </p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">del &#x2F;s *.hca</span><br><span class="line">pause</span><br></pre></td></tr></table></figure><hr></li></ol><p><a href="https://www.perfare.net/1556.html" target="_blank" rel="noopener">UnityLive2DExtractor</a>下载<br>我已经整理好了live2d文件，在github，我没有提取音频。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> live2d </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>方舟指令live2d提取</title>
       <link href="/post/%E6%96%B9%E8%88%9F%E6%8C%87%E4%BB%A4/"/>
       <url>/post/%E6%96%B9%E8%88%9F%E6%8C%87%E4%BB%A4/</url>
