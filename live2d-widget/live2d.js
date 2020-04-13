@@ -506,8 +506,8 @@ function(t) {
 		DEBUG_MOUSE_LOG: !1,
 		DEBUG_DRAW_HIT_AREA: !1,
 		DEBUG_DRAW_ALPHA_MODEL: !1,
-		VIEW_MAX_SCALE: 1.5,
-		VIEW_MIN_SCALE: 0.7,
+		VIEW_MAX_SCALE: 2,
+		VIEW_MIN_SCALE: .8,
 		VIEW_LOGICAL_LEFT: -1,
 		VIEW_LOGICAL_RIGHT: 1,
 		VIEW_LOGICAL_MAX_LEFT: -2,
@@ -4228,3 +4228,4 @@ default = r;
 		return null == this.json[this.INIT_PARTS_VISIBLE] || null == this.json[this.INIT_PARTS_VISIBLE][t] ? NaN : this.json[this.INIT_PARTS_VISIBLE][t][this.VALUE]
 	}
 }]);
+//# sourceMappingURL=live2d.js.map
