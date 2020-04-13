@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>魂器学院live2d提取</title>
+      <link href="/post/%E9%AD%82%E5%99%A8%E5%AD%A6%E9%99%A2/"/>
+      <url>/post/%E9%AD%82%E5%99%A8%E5%AD%A6%E9%99%A2/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="魂器学院live2d提取"><a href="#魂器学院live2d提取" class="headerlink" title="魂器学院live2d提取"></a>魂器学院live2d提取</h1><p>魂器学院(horcrux college )的live2d加密了图片和音频，为cocos2d加密。<code>lib</code>-<code>armeabi</code>文件夹有<code>libcocos2lua.so</code>。还有用笔记本打开图片开头有<code>sign</code>显示<code>bogehcollege</code>,解密只需要找<code>key</code>值。</p><h2 id="准备工具"><a href="#准备工具" class="headerlink" title="准备工具"></a>准备工具</h2><p><a href="https://github.com/zzwlpx/DecApkTools" target="_blank" rel="noopener">DecApkTools</a>或者<a href="https://github.com/CyanideCN/HorcruxCollegeExtract" target="_blank" rel="noopener">HorcruxCollegeExtract</a><br><code>IDA</code></p><h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><ol><li>提取live2d文件，<code>/assets/res/live2d/</code>里面的文件夹。</li><li>找<code>sign</code>值，笔记本打开图片开头有<code>sign</code>显示<code>bogehcollege</code>。</li><li>找<code>key</code>值<a href="https://www.52pojie.cn/thread-594286-1-1.html" target="_blank" rel="noopener">参考</a>,使用<code>IDA</code>加载<code>libcocos2lua.so</code>，<code>shift+F12</code>打开<code>string</code>窗口，’ALT+T‘搜索框搜索<code>sign</code>值<code>bogehcollege</code>，<code>key</code>值在上面的字符串<code>palmpi</code>(akp包名也有<code>palmpi</code>)。</li><li>使用<code>DecApkTools</code>和<code>HorcruxCollegeExtract</code>解密图片。<br>推荐使用<code>HorcruxCollegeExtract</code>批量处理。</li><li>音频在<code>assets/res/sound/</code>文件夹,音频解密和图片解密一样。如果使用<code>HorcruxCollegeExtract</code>，需要<code>decrtpy.py</code>中<code>flist = find_files(path, &#39;*.png&#39;)</code>改为`flist = find_files(path, ‘*.ogg’)。</li></ol><hr><p>我已经整理好了live2d文件，在<a href="https://github.com/Eikanya/Live2d-model" target="_blank" rel="noopener">github</a>。</p><hr><h2 id="诺亚幻想live2d"><a href="#诺亚幻想live2d" class="headerlink" title="诺亚幻想live2d"></a>诺亚幻想live2d</h2><p>诺亚幻想的live2d图片加密也是cocos2d,找<code>sign</code>值<code>key</code>值也是一样。  </p><p><code>sign</code>: <code>sanpjgames</code><br><code>key</code>: <code>threepjsecrets</code></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> live2d </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>为美好的世界献上祝福live2d提取</title>
       <link href="/post/%E4%B8%BA%E7%BE%8E%E5%A5%BD%E7%9A%84%E4%B8%96%E7%95%8C%E7%8C%AE%E4%B8%8A%E7%A5%9D%E7%A6%8F/"/>
       <url>/post/%E4%B8%BA%E7%BE%8E%E5%A5%BD%E7%9A%84%E4%B8%96%E7%95%8C%E7%8C%AE%E4%B8%8A%E7%A5%9D%E7%A6%8F/</url>
