@@ -21,7 +21,7 @@ window.live2d_settings = Array(); /*
 
 // 后端接口
 live2d_settings['modelAPI']             = '//live2d.hclonely.com/';   // 自建 API 修改这里
-live2d_settings['tipsMessage']          = 'https://cdn.jsdelivr.net/gh/Eikanya/live2dCDN/live2d-widget/waifu-tips.json';            // 同目录下可省略路径
+live2d_settings['tipsMessage']          = 'live2d-widget/waifu-tips.json';            // 同目录下可省略路径
 live2d_settings['hitokotoAPI']          = 'hitokoto.cn';                  // 一言 API，可选 'lwl12.com', 'hitokoto.cn', 'jinrishici.com'(古诗词)
 
 // 默认模型
@@ -67,7 +67,7 @@ live2d_settings['waifuDraggableRevert'] = true;         // 松开鼠标还原拖
 live2d_settings['l2dVersion']           = '1.4.2';        // 当前版本
 live2d_settings['l2dVerDate']           = '2018.11.12'; // 版本更新日期
 live2d_settings['homePageUrl']          = 'auto';       // 主页地址，可选 'auto'(自动), '{URL 网址}'
-live2d_settings['aboutPageUrl']         = 'https://www.fghrsh.net/post/123.html';   // 关于页地址, '{URL 网址}'
+live2d_settings['aboutPageUrl']         = '';   // 关于页地址, '{URL 网址}'
 live2d_settings['screenshotCaptureName']= 'live2d.png'; // 看板娘截图文件名，例如 'live2d.png'
 
 /****************************************************************************************************/
