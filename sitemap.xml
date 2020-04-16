@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eikanya.github.io/post/testmodelv3/</loc>
+    
+    <lastmod>2020-04-16T10:41:26.754Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eikanya.github.io/index.html</loc>
+    
+    <lastmod>2020-04-16T03:28:45.337Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eikanya.github.io/post/test/</loc>
+    
+    <lastmod>2020-04-15T15:59:20.551Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eikanya.github.io/post/%E9%AD%82%E5%99%A8%E5%AD%A6%E9%99%A2/</loc>
     
-    <lastmod>2020-04-13T03:10:57.495Z</lastmod>
+    <lastmod>2020-04-13T08:38:29.830Z</lastmod>
     
   </url>
   
@@ -33,13 +54,6 @@
     <loc>https://eikanya.github.io/post/live2d%E9%85%8D%E7%BD%AE/</loc>
     
     <lastmod>2020-04-10T02:39:06.348Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eikanya.github.io/post/test/</loc>
-    
-    <lastmod>2020-04-07T07:22:09.029Z</lastmod>
     
   </url>
   

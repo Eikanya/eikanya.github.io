@@ -1,0 +1,9 @@
+{
+  "Version": 3,
+  "FileReferences": {
+    "Moc": "shengluyisi_3.moc3",
+    "Textures": [
+      "textures/texture_00.png"
+    ]
+  }
+}
