@@ -28,7 +28,7 @@ body {
   z-index: -999;
   width: 100%;
   height: 100%;
-  background: url(https://konachan.com/image/0041c51378b3ec3b9883a2a8a7a93130/Konachan.com%20-%20304317%20animal%20animal_ears%20aqua_eyes%20black_hair%20breasts%20cat%20cleavage%20computer%20doll%20drink%20fang%20game_console%20microphone%20phone%20pokemon%20shorts%20yaemori_mini.png);
+  background: url("https://i.loli.net/2020/04/15/tFS5N1IoRf4VlTH.jpg");
   background-attachment: local;
   background-position: center;
   -webkit-background-size: cover;
@@ -77,7 +77,7 @@ hr {
   position: relative;
   margin: 2rem auto;
   width: calc(100% - 4px);
-  border: 2px dashed #a4d8fa;
+  border: 2px dashed #d2ebfd;
 }
 hr:hover:before {
   left: calc(95% - 20px);
@@ -87,7 +87,7 @@ hr:before {
   top: -10px;
   left: 5%;
   z-index: 1;
-  color: #49b1f5;
+  color: #a4d8fa;
   content: '\f0c4';
   font-style: normal;
   font-variant: normal;
@@ -100,8 +100,8 @@ hr:before {
   transition: all 1s ease-in-out;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  font-weight: 600;
-  font-family: 'Font Awesome 5 Free';
+  font-weight: normal;
+  font-family: FontAwesome;
 }
 iframe {
   margin: 0 0 1rem;
@@ -3013,8 +3013,7 @@ figure.gallery-group .gallery-group-name:after {
   top: 13px;
   left: 15px;
   font-size: larger;
-  font-weight: 600;
-  font-family: 'Font Awesome 5 Free';
+  font-family: 'FontAwesome';
 }
 .note.default {
   background-color: #f7f7f7;
@@ -3715,8 +3714,8 @@ figure.gallery-group .gallery-group-name:after {
   transition: all 0.2s ease-out;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  font-weight: 600;
-  font-family: 'Font Awesome 5 Free';
+  font-weight: normal;
+  font-family: FontAwesome;
 }
 #article-container h1:hover:before,
 #article-container h2:hover:before,
@@ -4082,7 +4081,7 @@ img {
   text-decoration: none;
 }
 #article-container a {
-  color: #49b1f5;
+  color: #99a9bf;
 }
 #article-container a:hover {
   text-decoration: underline;
@@ -4547,6 +4546,43 @@ img {
     display: block !important;
   }
 }
+#vcomment button {
+  padding: 0.3rem 1rem;
+  border-color: #fff;
+  background-color: #49b1f5;
+  color: #fff;
+  font-size: 0.7rem;
+}
+#vcomment button:hover {
+  background-color: #ff7242;
+}
+#vcomment textarea {
+  background: url("/img/comment_bg.jpg") 100% 100% no-repeat;
+}
+#vcomment .info {
+  display: none;
+}
+#vcomment .vimg {
+  border: 0;
+}
+#vcomment .vimg:hover {
+  -webkit-transform: rotate(540deg);
+  -moz-transform: rotate(540deg);
+  -o-transform: rotate(540deg);
+  -ms-transform: rotate(540deg);
+  transform: rotate(540deg);
+}
+#vcomment .vat {
+  padding: 0 0.8rem;
+  border: 1px solid #49b1f5;
+  border-radius: 5px;
+  color: #49b1f5;
+  font-size: 0.7125rem;
+}
+#vcomment .vat:hover {
+  background-color: #49b1f5;
+  color: #fff;
+}
 #article-container .aplayer ol,
 #article-container .aplayer ul {
   margin: 0;
@@ -4843,6 +4879,63 @@ img {
 }
 [data-theme='dark'] #gitalk-container svg {
   fill: rgba(255,255,255,0.6) !important;
+}
+[data-theme='dark'] #vcomment p,
+[data-theme='dark'] #vcomment a,
+[data-theme='dark'] #vcomment textarea,
+[data-theme='dark'] #vcomment .vemoji-btn,
+[data-theme='dark'] #vcomment .vpreview-btn,
+[data-theme='dark'] #vcomment input,
+[data-theme='dark'] #vcomment path,
+[data-theme='dark'] #vcomment .vcount,
+[data-theme='dark'] #vcomment .vnum,
+[data-theme='dark'] #vcomment .vtime,
+[data-theme='dark'] #vcomment .vsys,
+[data-theme='dark'] #vcomment .vnick {
+  color: rgba(255,255,255,0.6) !important;
+}
+[data-theme='dark'] #vcomment .vsys {
+  background: #616a6b !important;
+}
+[data-theme='dark'] #vcomment .vbtn,
+[data-theme='dark'] #vcomment .vat {
+  border: 1px solid rgba(255,255,255,0.6);
+  background: #1f1f1f !important;
+  color: rgba(255,255,255,0.6) !important;
+}
+[data-theme='dark'] #vcomment .vbtn:hover,
+[data-theme='dark'] #vcomment .vat:hover {
+  background: #454545 !important;
+}
+[data-theme='dark'] #vcomment .vwrap {
+  border: 1px solid rgba(255,255,255,0.6);
+}
+[data-theme='dark'] #vcomment input {
+  border-bottom: 1px dashed #616a6b;
+}
+[data-theme='dark'] #vcomment .vh {
+  border-bottom: 1px dashed #616a6b;
+}
+[data-theme='dark'] #vcomment pre {
+  border: 1px solid rgba(255,255,255,0.6);
+  background-color: #121212;
+}
+[data-theme='dark'] #vcomment pre code {
+  background: transparent;
+}
+[data-theme='dark'] #vcomment code {
+  background-color: #2c2c2c;
+  color: rgba(255,255,255,0.6);
+}
+[data-theme='dark'] #vcomment .vcontent.expand:before {
+  background: -webkit-linear-gradient(270deg, hsla(0,0%,0%,0), hsla(218,8%,19%,1));
+  background: -moz-linear-gradient(270deg, hsla(0,0%,0%,0), hsla(218,8%,19%,1));
+  background: -o-linear-gradient(270deg, hsla(0,0%,0%,0), hsla(218,8%,19%,1));
+  background: -ms-linear-gradient(270deg, hsla(0,0%,0%,0), hsla(218,8%,19%,1));
+  background: linear-gradient(180deg, hsla(0,0%,0%,0), hsla(218,8%,19%,1));
+}
+[data-theme='dark'] #vcomment .vcontent.expand:after {
+  background: #35393b;
 }
 [data-theme='dark'] #local-search {
   background: #121212;
