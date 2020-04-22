@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>VenusScramble live2d提取</title>
+      <link href="/post/VenusScramble/"/>
+      <url>/post/VenusScramble/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="魂器学院live2d提取"><a href="#魂器学院live2d提取" class="headerlink" title="魂器学院live2d提取"></a>魂器学院live2d提取</h1><p>VenusScramble的liv2d文件没有加密，不过live2d文件很乱，需要耐心整理出来。</p><h2 id="准备工具"><a href="#准备工具" class="headerlink" title="准备工具"></a>准备工具</h2><p><code>AssetStudio.x64.v0.14.28</code><br><code>Advanced Renamer</code><br><code>vgmtoolbox</code><br><code>HCADecoder</code></p><h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><ol><li>提取live2d文件，<code>data\jp.co.bprint.venusrumble\files\ab</code>里面的文件夹。</li><li>整理文件,一般live2d文件大小再600kb~2000kb。</li><li><code>AssetStudio</code>加载文件夹，<code>AssetStudio</code>设置<code>Options - Export options - Group exported assets by contain path</code>。</li><li>设置<code>Filter Type</code>- 勾选<code>TextAsset</code>和<code>Texture2D</code>，然后选项过滤后的全部文件夹，<code>Export</code>-<code>Selected assets</code>。</li><li>导入后的文件夹含有live2d文件，需要自己整理文件名<code>Advanced Renamer</code>，然后添加<code>model.json</code>配置文件。</li><li>音频在<code>data\jp.co.bprint.venusrumble\files\snd</code>文件夹。为<code>cpk</code>格式的文件，可以用<code>vgmtoolbox</code>解包，<code>cpk</code>解包出来的<code>awb</code>文件再使用<code>vgmtoolbox</code>解包。</li><li>解包出了的<code>awb.00000.bin</code>文件使用<code>HCADecoder</code>转码音频格式。语音文件处理可以参考以前的文章<code>为美好的世界献上祝福</code>的方法。</li></ol><hr><p>我已经整理好了live2d文件，在<a href="https://github.com/Eikanya/Live2d-model" target="_blank" rel="noopener">github</a>。</p><hr>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> live2d </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>魂器学院live2d提取</title>
       <link href="/post/%E9%AD%82%E5%99%A8%E5%AD%A6%E9%99%A2/"/>
       <url>/post/%E9%AD%82%E5%99%A8%E5%AD%A6%E9%99%A2/</url>

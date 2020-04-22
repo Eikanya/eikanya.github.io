@@ -30,6 +30,7 @@
         { "selector": ".aplayer-volume-bar-wrap", "text": ["在这里可以调整<span style=\"color:#0099cc;\">音量</span>呢"] },
         { "selector": ".aplayer-list", "text": ["<span style=\"color:#0099cc;\">播放列表</span>里都有什么呢"] },
         { "selector": ".aplayer-lrc-current", "text": ["<span style=\"color:#0099cc;\">♫ {text}♫ </span>"] },
+		{ "selector": ".aplayer-title", "text": ["要听<span style=\"color:#0099cc;\">♫ {text}♫ </span>这首歌吗？"] },
         { "selector": ".waifu", "text": ["干嘛呢你，快把手拿开", "鼠…鼠标放错地方了！","变态","笨蛋"] },
 		{ "selector": "#search_button", "text": ["要搜索吗？"] },
 		{ "selector": "#menus_item", "text": ["看菜单吗？"] },
