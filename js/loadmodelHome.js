@@ -6,8 +6,10 @@ try {
         $.ajax({url: "https://cdn.jsdelivr.net/gh/Eikanya/live2dCDN@1.1/live2dv3/framework/live2dcubismpixi.js", dataType:"script", cache: true, success: function() {
 			$.ajax({url: "post/live2dv3/core/live2dcubismcore.min.js", dataType:"script", cache: true, success: function() {
 				$.ajax({url: "https://cdn.jsdelivr.net/gh/Eikanya/live2dCDN@1.1/live2dv3/framework/live2dcubismframework.js", dataType:"script", cache: true, success: function() {
-					$.ajax({url:"post/live2dv3/loadModelHome.js", dataType:"script", cache: true, success: function() {
-						new loadModel();
+					$.ajax({url:"post/live2dv3/waifu/waifu-tipsHome.js", dataType:"script", cache: true, success: function() {
+						$.ajax({url:"post/live2dv3/loadModelHome.js", dataType:"script", cache: true, success: function() {
+							new loadModel();
+						}});
 					}});
 				}});
             }});
@@ -43,7 +45,7 @@ if (screen.width >= 500) {
 	Promise.all([
 		loadExternalResource("https://cdn.jsdelivr.net/gh/Eikanya/live2dCDN@1.1/live2dv3/js/polyfill.min.js", "js"),
 		loadExternalResource("https://cdn.jsdelivr.net/gh/Eikanya/live2dCDN@1.1/live2dv3/js/jquery.min.js", "js"),
-		loadExternalResource(live2d_path + "waifu/waifu-tipsHome.js", "js"),
+		//loadExternalResource(live2d_path + "waifu/waifu-tipsHome.js", "js"),
 		loadExternalResource("https://cdn.jsdelivr.net/gh/Eikanya/live2dCDN@1.1/live2dv3/waifu/waifu.css", "css")
 	])
 }
