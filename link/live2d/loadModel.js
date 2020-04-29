@@ -20,7 +20,7 @@ console.log(`
 var LIVE2DCUBISMCORE = Live2DCubismCore
 //var baseModelPath = window.location.protocol+'//cdn.'+ window.location.host+"/Resource/live2d/";
 var baseModelPath = "live2d/assets/" ;
-var modelNames = ["xuefeng_3"];
+var modelNames = ["ybxd0414"];
 var modelPath;
 var app;
 var tag_target = '.waifu';
@@ -31,10 +31,10 @@ var touch_body;
 var touch_head;
 var touch_special;
 var model_x = 5;
-var model_y = 0;
-var modelWidth = 360;
-var modelHight = 500;
-var scale = 30;
+var model_y = -55;
+var modelWidth = 300;
+var modelHight = 450;
+var scale = 220;
 var startTime;
 function loadMotions(motions){
     var motionCount = 0 ;
@@ -135,9 +135,9 @@ function setMotions(model,resources){
         model.animator.addLayer("motion", LIVE2DCUBISMFRAMEWORK.BuiltinAnimationBlenders.OVERRIDE, 1.0);
         if(null != loginIndex && null != idleIndex){
             model.animator.getLayer("motion").play(motions[loginIndex]);
-            timeOut = setTimeout( function(){model.animator.getLayer("motion").play(motions[idleIndex]);}, motions[loginIndex].duration * 1000 );
+            timeOut = setTimeout( function(){model.animator.getLayer("motion").play(motions[idleIndex]);}, motions[loginIndex].duration * 3000 );
         }else{
-            model.animator.getLayer("motion").play(motions[0]);
+            model.animator.getLayer("motion").play(motions[idleIndex]);
         }
     }
     return motions;
@@ -150,7 +150,6 @@ function setMouseTrick(model,app,canvas,motions){
     if(angle_x < 0){ angle_x = model.parameters.ids.indexOf("PARAM_ANGLE_X"); }
     var angle_y = model.parameters.ids.indexOf("ParamAngleY");
     if(angle_y < 0){ angle_y = model.parameters.ids.indexOf("PARAM_ANGLE_Y"); }
-	if(angle_x < 0){ angle_x = model.parameters.ids.indexOf("PARAM_ANGLE_X"); }
     var angle_y = model.parameters.ids.indexOf("ParamAngleY");
     if(angle_y < 0){ angle_y = model.parameters.ids.indexOf("PARAM_ANGLE_Y"); }
 	var eye_x = model.parameters.ids.indexOf("ParamEyeBallX");
@@ -168,9 +167,9 @@ function setMouseTrick(model,app,canvas,motions){
         var y = mouse_y - center_y;
         model.parameters.values[angle_x] = x * 0.2;
         model.parameters.values[angle_y] = -y * 0.2;
-        model.parameters.values[eye_x] = x * 0.01;
-        model.parameters.values[eye_y] = -y * 0.01;
-		model.parameters.values[body_x] = x * 0.1;
+        model.parameters.values[eye_x] = x * 0.005;
+        model.parameters.values[eye_y] = -y * 0.005;
+		model.parameters.values[body_x] = x * 0.2;
         model.parameters.values[body_y] = -y * 0.2;
         model.update(deltaTime);
         model.masks.update(app.renderer);
