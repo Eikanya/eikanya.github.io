@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eikanya.github.io/post/unity/</loc>
+    
+    <lastmod>2020-05-01T13:33:59.066Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eikanya.github.io/link/index.html</loc>
     
     <lastmod>2020-04-29T13:28:50.546Z</lastmod>
@@ -47,13 +54,6 @@
     <loc>https://eikanya.github.io/post/%E5%B0%91%E5%A5%B3%E5%92%96%E5%95%A1%E6%9E%AA/</loc>
     
     <lastmod>2020-04-29T12:36:54.855Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eikanya.github.io/unity.html</loc>
-    
-    <lastmod>2020-04-28T16:51:04.025Z</lastmod>
     
   </url>
   
