@@ -1,7 +1,7 @@
 var LIVE2DCUBISMCORE = Live2DCubismCore
 //var baseModelPath = window.location.protocol+'//cdn.'+ window.location.host+"/Resource/live2d/";
 var baseModelPath = "https://cdn.jsdelivr.net/gh/Eikanya/live2dCDN@1.1/live2dv3/assets/" ;
-var modelNames = ["shengluyisi_3"];
+var modelNames = 
 var modelPath;
 var app;
 var tag_target = '.waifu';
@@ -13,9 +13,9 @@ var touch_head;
 var touch_special;
 var model_x = -5;
 var model_y = 0;
-var modelWidth = 380;
-var modelHight = 360;
-var scale = 26;
+var modelWidth = 280;
+var modelHight = 250;
+var scale = 25;
 var startTime;
 function loadMotions(motions){
     var motionCount = 0 ;
