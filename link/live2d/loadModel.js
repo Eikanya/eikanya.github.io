@@ -19,8 +19,9 @@ console.log(`
 `);
 var LIVE2DCUBISMCORE = Live2DCubismCore
 //var baseModelPath = window.location.protocol+'//cdn.'+ window.location.host+"/Resource/live2d/";
-var baseModelPath = "live2d/assets/" ;
-var modelNames = ["ybxd0414"];
+//var baseModelPath = "live2d/assets/" ;
+var baseModelPath = "https://cdn.jsdelivr.net/gh/Eikanya/live2dCDN@1.2.1/live2dv3/assets/" 
+var modelNames = ["aimierbeierding_3"];
 var modelPath;
 var app;
 var tag_target = '.waifu';
@@ -31,10 +32,10 @@ var touch_body;
 var touch_head;
 var touch_special;
 var model_x = 5;
-var model_y = -55;
-var modelWidth = 300;
-var modelHight = 450;
-var scale = 220;
+var model_y = -5;
+var modelWidth = 450;
+var modelHight = 350;
+var scale = 25;
 var startTime;
 function loadMotions(motions){
     var motionCount = 0 ;
@@ -135,7 +136,7 @@ function setMotions(model,resources){
         model.animator.addLayer("motion", LIVE2DCUBISMFRAMEWORK.BuiltinAnimationBlenders.OVERRIDE, 1.0);
         if(null != loginIndex && null != idleIndex){
             model.animator.getLayer("motion").play(motions[loginIndex]);
-            timeOut = setTimeout( function(){model.animator.getLayer("motion").play(motions[idleIndex]);}, motions[loginIndex].duration * 3000 );
+            timeOut = setTimeout( function(){model.animator.getLayer("motion").play(motions[idleIndex]);}, motions[loginIndex].duration * 2000 );
         }else{
             model.animator.getLayer("motion").play(motions[idleIndex]);
         }
@@ -169,8 +170,8 @@ function setMouseTrick(model,app,canvas,motions){
         model.parameters.values[angle_y] = -y * 0.2;
         model.parameters.values[eye_x] = x * 0.005;
         model.parameters.values[eye_y] = -y * 0.005;
-		model.parameters.values[body_x] = x * 0.2;
-        model.parameters.values[body_y] = -y * 0.2;
+		model.parameters.values[body_x] = x * 0.1;
+        model.parameters.values[body_y] = -y * 0.1;
         model.update(deltaTime);
         model.masks.update(app.renderer);
     });

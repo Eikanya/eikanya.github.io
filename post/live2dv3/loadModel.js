@@ -1,7 +1,7 @@
 var LIVE2DCUBISMCORE = Live2DCubismCore
 //var baseModelPath = window.location.protocol+'//cdn.'+ window.location.host+"/Resource/live2d/";
 var baseModelPath = "https://cdn.jsdelivr.net/gh/Eikanya/live2dCDN@1.1/live2dv3/assets/" ;
-var modelNames = ["shengluyisi_3"]
+var modelNames = ["xuefeng_3"];
 var modelPath;
 var app;
 var tag_target = '.waifu';
@@ -13,9 +13,9 @@ var touch_head;
 var touch_special;
 var model_x = -5;
 var model_y = 0;
-var modelWidth = 280;
-var modelHight = 250;
-var scale = 25;
+var modelWidth = 320;
+var modelHight = 300;
+var scale = 26;
 var startTime;
 function loadMotions(motions){
     var motionCount = 0 ;
@@ -131,12 +131,14 @@ function setMouseTrick(model,app,canvas,motions){
     if(angle_x < 0){ angle_x = model.parameters.ids.indexOf("PARAM_ANGLE_X"); }
     var angle_y = model.parameters.ids.indexOf("ParamAngleY");
     if(angle_y < 0){ angle_y = model.parameters.ids.indexOf("PARAM_ANGLE_Y"); }
+	if(angle_x < 0){ angle_x = model.parameters.ids.indexOf("PARAM_ANGLE_X"); }
     var angle_y = model.parameters.ids.indexOf("ParamAngleY");
     if(angle_y < 0){ angle_y = model.parameters.ids.indexOf("PARAM_ANGLE_Y"); }
 	var eye_x = model.parameters.ids.indexOf("ParamEyeBallX");
     if(eye_x < 0){ eye_x = model.parameters.ids.indexOf("PARAM_EYE_BALL_X"); }
     var eye_y = model.parameters.ids.indexOf("ParamEyeBallY");
     if(eye_y < 0){ eye_y = model.parameters.ids.indexOf("PARAM_EYE_BALL_Y"); }
+	
 	var body_x = model.parameters.ids.indexOf("ParamBodyAngleX");
     if( body_x < 0){ body_x = model.parameters.ids.indexOf("Param_BodyAngle_X"); }
     var body_y = model.parameters.ids.indexOf("ParamAngleY");
@@ -148,10 +150,10 @@ function setMouseTrick(model,app,canvas,motions){
         var y = mouse_y - center_y;
         model.parameters.values[angle_x] = x * 0.2;
         model.parameters.values[angle_y] = -y * 0.2;
-        model.parameters.values[eye_x] = x * 0.005;
-        model.parameters.values[eye_y] = -y * 0.005;
+        model.parameters.values[eye_x] = x * 0.01;
+        model.parameters.values[eye_y] = -y * 0.01;
 		model.parameters.values[body_x] = x * 0.1;
-        model.parameters.values[body_y] = -y * 0.15;
+        model.parameters.values[body_y] = -y * 0.2;
         model.update(deltaTime);
         model.masks.update(app.renderer);
     });
