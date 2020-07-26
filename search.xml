@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>spine模型预览</title>
+      <link href="/post/spine%E9%A2%84%E8%A7%88/"/>
+      <url>/post/spine%E9%A2%84%E8%A7%88/</url>
+      
+        <content type="html"><![CDATA[<h1 id="spine"><a href="#spine" class="headerlink" title="spine"></a>spine</h1><p>spine简介和导入uniy预览可以看我另一篇文章<code>spine配置</code></p><h1 id="准备软件"><a href="#准备软件" class="headerlink" title="准备软件"></a>准备软件</h1><p><code>AssetStudio</code><br><code>Advanced Renamer</code><br><code>live2DViewerEX</code></p><h1 id="spine提取"><a href="#spine提取" class="headerlink" title="spine提取"></a>spine提取</h1><ol><li>以提取碧蓝航线为例，在<code>chara</code>文件夹里，<code>AssetStudio</code>打开<code>spine</code>文件夹.  </li><li>选择<code>Flter Type</code>-<code>TextAsset</code>和<code>Texture2D</code>勾选。然后，<code>Export</code>-<code>Flter assets</code><br><img src="/" class="lazyload" data-src="/img/spine1.png"  alt="AssetStudio"></li><li>将前缀同名文件合并在同一文件夹上，</li></ol><p><strong>skel格式结构</strong><br><code>skeleton.skel</code><br><code>skeleton.json</code><br><code>skeleton.png</code></p><p>使用<code>.bat</code>命令，新建一个<code>.bat</code>文件，复制下面代码。</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">@echo off</span><br><span class="line">setlocal</span><br><span class="line"></span><br><span class="line">set &quot;basename&#x3D;.&quot;</span><br><span class="line">for &#x2F;F &quot;tokens&#x3D;1* delims&#x3D;.&quot; %%a in (&#39;dir &#x2F;B &#x2F;A-D ^| sort &#x2F;R&#39;) do (</span><br><span class="line">   set &quot;filename&#x3D;%%a&quot;</span><br><span class="line">   setlocal EnableDelayedExpansion</span><br><span class="line">   for &#x2F;F &quot;delims&#x3D;&quot; %%c in (&quot;!basename!&quot;) do if &quot;!filename:%%c&#x3D;!&quot; equ &quot;!filename!&quot; (</span><br><span class="line">      set &quot;basename&#x3D;!filename!&quot;</span><br><span class="line">      md &quot;!basename!&quot;</span><br><span class="line">   )</span><br><span class="line">   move &quot;!filename!.%%b&quot; &quot;!basename!&quot;</span><br><span class="line">   for &#x2F;F &quot;delims&#x3D;&quot; %%c in (&quot;!basename!&quot;) do (</span><br><span class="line">      endlocal</span><br><span class="line">      set &quot;basename&#x3D;%%c</span><br><span class="line">   )</span><br><span class="line">)</span><br></pre></td></tr></table></figure><ol start="4"><li>删除<code>.txt</code>后缀。<code>Advanced Renamer</code>导入所有含有<code>txt</code>的文件<code>*txt*</code>.选择删除字符,应用到扩展名.<br><img src="/" class="lazyload" data-src="/img/spine2.png"  alt="Advanced Renamer"></li><li>预览spine模型。打开<code>live2DViewerEX</code> -EX工作室，spine编辑器(需购买插件)。创建配置文件，骨架选择<code>.skel</code>,纹理图集选择<code>.altas</code>,勾选贴图。<br><img src="/" class="lazyload" data-src="/img/spine3.png"  alt="live2DViewerEX"></li><li>如果模型有白边，配置文件-选项-着色器选择<code>Skeleton-Straight-Alpha</code></li></ol><hr><p>spine模型：<a href="https://github.com/Eikanya/spine-models" target="_blank" rel="noopener">github</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> spine </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>spine动画提取</title>
       <link href="/post/spine%E5%8A%A8%E7%94%BB%E6%8F%90%E5%8F%96/"/>
       <url>/post/spine%E5%8A%A8%E7%94%BB%E6%8F%90%E5%8F%96/</url>
@@ -33,7 +52,7 @@
       
         <tags>
             
-            <tag> live2d </tag>
+            <tag> spine </tag>
             
         </tags>
       
