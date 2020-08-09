@@ -102,7 +102,7 @@ function loadTips(){
 					text = 'Hello! 来自 谷歌搜索 的朋友<br>欢迎阅读<span style="color:#0099cc;">『' + document.title.split(' - ')[0] + '』</span>';
 				}
 			}else {
-				if (window.location.href == 'http://localhost:4000/') { //如果是主页
+				if (window.location.href == 'https://blog.tsundere.best/') { //如果是主页
 					var now = (new Date()).getHours();
 					if (now > 23 || now <= 5) {
 						text = '你是夜猫子呀？这么晚还不睡觉，明天起的来嘛';
