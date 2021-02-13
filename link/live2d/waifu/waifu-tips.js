@@ -51,7 +51,7 @@ function loadTips(){
 
 		$.ajax({
 			cache: true,
-			url: "../live2dv3/waifu/waifu-tips.json",
+			url: "live2d/waifu/waifu-tips.json",
 			dataType: "json",
 			success: function (result){
 				welcomeMessage();
